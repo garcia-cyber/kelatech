@@ -10,8 +10,8 @@ app.secret_key = "Kelatech_sitaEgeune "
 @app.route("/kelatech")
 def kelatech():
     return render_template('index.html')
-
-
+ 
+     
 
 #boucle 
 if __name__ == '__main__' :
