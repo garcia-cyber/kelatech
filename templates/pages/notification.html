@@ -1,0 +1,181 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
+    <title>KelaTech</title>
+    <!--liens css-->
+    
+    <link rel="stylesheet"
+          href="parent-style.css">
+          <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+    
+    <!-- font google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
+      
+      
+      </style>
+</head>
+ 
+<body>
+   
+    <!-- for header part -->
+    <header>
+ 
+        <div class="logosec">
+            <div class="logo"> <img src="img/logo.png"  class="icn menuicn"
+                id="menuicn"
+                alt="menu-icon">
+            </div>
+           
+        </div>
+ 
+        <div class="searchbar">
+            <input type="text"
+                   placeholder="Search">
+            <div class="searchbtn">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+ 
+        <div class="message">
+            <div class="circle"></div>
+            <i class="fas fa-envelope"></i>
+            <div class="dp" style="background-color:white ;">
+                <a href="profile.html"><img src="img/profil.png"
+                    class="dpicn"
+                    alt="dp">
+                </a>
+              
+            </div>
+        </div>
+ 
+    </header>
+ 
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="option2 nav-option">
+                        <i class="fas fa-home"></i>
+                        <h3> Dashboard</h3>
+                    </div>
+ 
+                    <div class="option2 nav-option">
+                        <i class="fas fa-child"></i>
+                        <a href="enfants.html">
+                            <h3> Enfants</h3>
+                        </a>
+                       
+                    </div>
+                    <div class="option2 nav-option">
+                        <i class="fas fa-school"></i>
+                        <a href="ecoles.html">
+                        
+                        <h3> Ecoles</h3>
+                        </a>
+                    </div>
+ 
+                    <div class="nav-option option3">
+                        <i class="fas fa-credit-card"></i>
+                        <a href="paiement.html">
+                            <h3> Paiements</h3>
+                        </a>
+                    </div>
+ 
+                    <div class="nav-option option1">
+                        <i class="fas fa-bell"></i>
+                        <a href="notification.html">
+                            <h3 style="color:white ;"> Notification</h3>
+                        </a>
+                    </div>
+ 
+                    <div class="nav-option option5">
+                        <i class="fas fa-blog"></i>
+                        <a href="blog.html">
+                            <h3>Blog</h3>
+                        </a>
+                    </div>
+ 
+                    <div class="nav-option option6">
+                        <i class="fas fa-setting"></i>
+                        <a href="parametre.html">
+                            <h3>Paramètres</h3>
+                        </a>
+                    </div>
+ 
+                    <div class="nav-option logout">
+                        <i class="fas fa-logout"></i>
+                        <h3>Déconnexion</h3>
+                    </div>
+ 
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+ 
+            <div class="searchbar2">
+                <input type="text"
+                       name=""
+                       id=""
+                       placeholder="Search">
+                <div class="searchbtn">
+                    <i class="fas fa-search"></i>
+                  </div>
+            </div>
+ 
+           
+            <div class="report-container">
+                <div class="report-header">
+                    <h1 class="recent-Articles">Toutes les notifications</h1>
+                    <button class="view">Voir tout</button>
+                </div>
+ 
+                <div class="report-body">
+                    <div class="report-topic-heading">
+                        <h3 class="t-op">Désignation</h3>
+                        <h3 class="t-op">Expediteur</h3>
+                        <h3 class="t-op">Contenu</h3>
+                        <h3 class="t-op">Option</h3>
+                    </div>
+ 
+                    <div class="items">
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">Bienvenu!</h3>
+                            <h3 class="t-op-nextlvl">Kela-Tech administration</h3>
+                            <h3 class="t-op-nextlvl">Bienvenue sur KelaTech</h3>
+                            <a href="#"><h3 class="t-op-nextlvl lavel-tag">Ouvrir</h3></a>
+                            
+                        </div>
+ 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script type="text/javascript">
+ let menuicn = document.querySelector(".menuicn");
+ let nav = document.querySelector(".navcontainer");
+ 
+ menuicn.addEventListener("click",()=>
+ {
+ nav.classList.toggle("navclose");
+ })
+ </script>
+    <script src="./index.js"></script>
+</body>
+</html>

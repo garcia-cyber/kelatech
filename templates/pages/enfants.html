@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
+    <title>KelaTech</title>
+    <!--liens css-->
+    
+    <link rel="stylesheet"
+          href="parent-style.css">
+          <link rel="stylesheet"
+          href="enfant-style.css">
+          <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+    
+    <!-- font google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
+      
+      
+      </style>
+</head>
+ 
+<body>
+   
+    <!-- for header part -->
+    <header>
+ 
+        <div class="logosec">
+            <div class="logo"> <img src="img/logo.png"  class="icn menuicn"
+                id="menuicn"
+                alt="menu-icon">
+            </div>
+           
+        </div>
+ 
+        <div class="searchbar">
+            <input type="text"
+                   placeholder="Search">
+            <div class="searchbtn">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+ 
+        <div class="message">
+            <div class="circle"></div>
+            <i class="fas fa-envelope"></i>
+            <div class="dp" style="background-color:white ;">
+                <a href="profile.html"><img src="img/profil.png"
+                    class="dpicn"
+                    alt="dp">
+                </a>
+              
+            </div>
+        </div>
+ 
+    </header>
+ 
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="option2 nav-option">
+                        <i class="fas fa-home"></i>
+                        <a href="profile-parent.html">
+                            <h3> Dashboard</h3>
+                        </a>
+                        
+                    </div>
+ 
+                    <div class=" nav-option option1">
+                        <i class="fas fa-child"></i>
+                        <h3> Enfants</h3>
+                    </div>
+                    <div class="option2 nav-option">
+                        <i class="fas fa-school"></i>
+                        <a href="ecoles.html">
+                        
+                        <h3> Ecoles</h3>
+                        </a>
+                    </div>
+ 
+                    <div class="nav-option option3">
+                        <i class="fas fa-credit-card"></i>
+                        <a href="paiement.html">
+                            <h3> Paiements</h3>
+                        </a>
+                        
+                    </div>
+ 
+                    <div class="nav-option option4">
+                        <i class="fas fa-bell"></i>
+                        <a href="notification.html">
+                            <h3> Notification</h3>
+                        </a>
+                        
+                    </div>
+ 
+                    <div class="nav-option option5">
+                        <i class="fas fa-blog"></i>
+                        <a href="blog.html">
+                            <h3>Blog</h3>
+                        </a>
+                        
+                    </div>
+ 
+                    <div class="nav-option option6">
+                        <i class="fas fa-setting"></i>
+                        <a href="parametre.html">
+                            <h3>Paramètres</h3>
+                        </a>
+                        
+                    </div>
+ 
+                    <div class="nav-option logout">
+                        <i class="fas fa-logout"></i>
+                        <h3>Déconnexion</h3>
+                    </div>
+ 
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+ 
+            <div class="searchbar2">
+                <input type="text"
+                       name=""
+                       id=""
+                       placeholder="Search">
+                <div class="searchbtn">
+                    <i class="fas fa-search"></i>
+                  </div>
+            </div>
+ 
+            <div class="box-container">
+ 
+                <div class="box box1">
+                    <div class="text">
+                        <h2 class="topic-heading">5</h2>
+                        <h2 class="topic">Enfant Inscrit</h2>
+                    </div>
+ 
+                    <i class="fas fa-child"></i>
+                </div>
+ 
+                <div class="box box2">
+                    <div class="text">
+                        <h2 class="topic-heading">1</h2>
+                        <h2 class="topic">Ecole</h2>
+                    </div>
+ 
+                    <i class="fas fa-school"></i>
+                </div>
+ 
+                <div class="box box3">
+                    <div class="text">
+                        <h2 class="topic-heading">10</h2>
+                        <h2 class="topic">Bonus</h2>
+                    </div>
+ 
+                    <i class="fas fa-star"></i>
+                </div>
+ 
+                <div class="box box4">
+                    <div class="text">
+                        <h2 class="topic-heading">7</h2>
+                        <h2 class="topic">Transaction</h2>
+                    </div>
+ 
+                    <i class="fas fa-credit-card"></i>
+                </div>
+            </div>
+ 
+            <div class="report-container">
+                <div class="card">
+                    <div class="img-box">
+                        <img class="img-enfant" src="img/profil.png"alt="profile pic">
+                    </div>
+                    <div class="info">
+                        <h2>Nom de l'enfant</h2>
+                        <p>Nom de l'ecole | classe</p>
+          
+                        <button>Statistique</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script type="text/javascript">
+ let menuicn = document.querySelector(".menuicn");
+ let nav = document.querySelector(".navcontainer");
+ 
+ menuicn.addEventListener("click",()=>
+ {
+ nav.classList.toggle("navclose");
+ })
+ </script>
+    <script src="./index.js"></script>
+</body>
+</html>

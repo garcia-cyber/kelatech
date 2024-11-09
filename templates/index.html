@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- - primary meta tag-->
+  <title>Kela-Tech</title>
+  <meta name="title" content="Kela-Tech">
+  <meta name="description" content="e-learning website">
+  <!-- Favicon -->
+    <link href="{{url_for('static',filename= 'assets/img/logo.png')}}" rel="icon">
+  <!--liens css-->
+  <link rel="stylesheet" href="{{url_for('static',filename= 'assets/css/style.css')}}">
+
+  <!-- font google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- debut header-->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="assets/img/kelaTech.png" width="120" height="30" alt="logo kelatech">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="{{url_for('static',filename = 'assets/img/kelaTech.png')}}" width="120" height="30" alt="logo kelatech">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Accueil</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>A propos</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-link>Cours</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Forums</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" id="hide" class="navbar-link hide" data-nav-link>Se connecter</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Recherche">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="header-action-btn" aria-label="cart" title="Cart">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+        <a href="#" class="btn has-before">
+          <span class="span">Se connecter</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <!--fin header-->
+
+
+
+  <main>
+    <article>
+
+      <!-- main content -->
+
+
+       <!-- Accueil debut section -->
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">Numerisez la scolarité de vos enfants</h1>
+
+            <p class="hero-text"> Une situation exceptionnelle demande une information rapide, l&#39;information part
+                instantanément via SMS, email, ou une notification smartphone</p>
+
+            <a href="" class="btn has-before">
+              <span class="span">Nos ecoles partenaires</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <div class="img-holder one" style="--width: 270; --height: 300;">
+              <img src="{{url_for('static',filename = 'assets/img/DSC_6539.jpg')}}" width="270" height="300" alt="hero banner" class="img-cover">
+            </div>
+
+            <div class="img-holder two" style="--width: 240; --height: 370;">
+              <img src="{{url_for('static',filename = 'assets/img/DSC_6544.jpg')}}" width="240" height="370" alt="img carroussel" class="img-cover">
+            </div>
+
+            <img src="{{url_for('static',filename = 'assets/img/DSC_6547.jpg')}}" width="380" height="190" alt="img carroussel" class="shape hero-shape-1">
+
+            <img src="{{url_for('static',filename = 'assets/img/DSC_6625.jpg')}}" width="622" height="551" alt="img carroussel" class="shape hero-shape-2">
+
+          </figure>
+
+        </div>
+      </section>
+
+ <!-- Accueil fin section -->
+
+
+
+      <!-- Nos service debut section -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <p class="section-subtitle">Nos services</p>
+
+          <h2 class="h2 section-title">Kela-Tech</h2>
+
+          <p class="section-text">Vous offres</p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="category-card" style="--color: 170, 75%, 41%">
+
+                <div class="card-icon">
+                  <img src="{{url_for('static', filename= 'assets/img/app.png')}}" width="40" height="40" loading="lazy"
+                    alt="Online Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Une application smarthphone </a>
+                </h3>
+
+                <p class="card-text">Pour le suivie, l'accompagnement et la gestion scolaire de vos enfants</p>
+
+                <a href="#" class="card-badge">Télécharger l'application mobile</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 351, 83%, 61%">
+
+                <div class="card-icon">
+                  <img src="{{url_for('static', filename = 'assets/img/paie.png')}}" width="40" height="40" loading="lazy"
+                    alt="Non-Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Un paiement en ligne sécurisé</a>
+                </h3>
+
+                <p class="card-text">Plus de risque de vole et embargo,sécuriser votre argent, payer en ligne et recevez votre facture instantanément</p>
+
+                <a class="card-badge" href="#">Gérer ses paiements</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="{{url_for('static', filename = 'assets/img/ordi.png')}}" width="40" height="40" loading="lazy"
+                    alt="Off-Campus Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Une application web performante</a>
+                </h3>
+
+                <p class="card-text">Connectez-vous au monde et laissez le numerique vous faciliter la vie avec Kela-Tech.</p>
+
+                <a href=" #" class="card-badge">Télécharger la WebApp</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 42, 94%, 55%">
+
+                <div class="card-icon">
+                  <img src="{{url_for('static', filename = 'assets/img/calendrier.png')}}" width="40" height="40" loading="lazy"
+                    alt="Hybrid Distance Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Un veritable soutiens</a>
+                </h3>
+
+                <p class="card-text">Kela-Tech offre des bourses et des fournitures aux élèves méritants, ainsi qu'aux meilleurs parents, sans oublier les écoles les plus actives.</p>
+
+                <a href="#" class="card-badge">Voir les conditions</a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+ <!-- Nos service fin section -->
+
+
+      <!-- A propos de Kela-Tech debut-->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <div class="img-holder" style="--width: 520; --height: 700;">
+              <img src="{{url_for('static', filename = 'assets/img/about.jpg')}}" width="520" height="500" loading="lazy" alt="about image"
+                class="img-cover">
+            </div>
+             <br/>
+            <div class="img-holder" style="--width: 520; --height: 700;">
+                <img src="{{url_for('static', filename = 'assets/img/sarah.jpg')}}" width="520" height="500" loading="lazy" alt="about image"
+                  class="img-cover">
+              </div>
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">En savoir plus sur Kela-Tech</p>
+
+            <h2 class="h2 section-title">Un mot,  <span class="span"> "Le digital" </span>  ,prend tout son sens dans notre époque, il est inconcevable que les tracasseries archaiques, continuent à prevaloir en ce qui est du suivie de l'éducation scolaire de vos enfants
+            </h2>
+
+            <p class="section-text">Kela-Tech a été crée par des experts du monde digital, soucieux de faciliter la vie aux parents et aux écoles, en ce qui est du suivie, la prise en charge et l'accompagnement de l'éducation de nos enfants. Son C.E.O. Eugène Sita est un analyste programmeur, entrepreneur et patriote, soucieux de faciliter les parents et les écoles congolaises. Sarah Chikuru, Directrice Technique est une experte du developpement de logiciel, conceptrice de l'application mobile et web de Kela-Tech</p>
+            <p class="section-text">Créer par le collectif Pro-Tech</p>
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Des expert du digital</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Des cours en ligne et hors ligne</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">La rapidité et la securité</span>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+
+ <!-- A propos de KelaTech fin section -->
+
+
+      <!-- cours en ligne debut section -->
+
+      <section class="section course" id="courses" aria-label="course">
+        <div class="container">
+
+          <p class="section-subtitle">Formations sur Kela-Tech</p>
+
+          <h2 class="h2 section-title">Kelatech propose des cours et formations en ligne pour accompagner vos enfants dans leur cursus scolaire.</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="{{url_for('static', filename = 'assets/img/calendrier.png')}}" width="370" height="220" loading="lazy"
+                    alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">3 semaines</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Mathématiques</span>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Cours complet de mathématique à tout les niveaux</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(7/7 jrs)</p>
+
+                  </div>
+
+                  <data class="price" value="29">30$</data>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3 semaines</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3 vacations</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="{{url_for('static', filename = 'assets/img/calendrier.png')}}" width="370" height="220" loading="lazy"
+                    alt="Java Programming Masterclass for Software Developers" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">3 semaines</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Physique</span>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Cours d'accompagnement en physique</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(7/7 jrs)</p>
+
+                  </div>
+
+                  <data class="price" value="49">30$</data>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3 semaines</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3 vacation</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="{{url_for('static', filename = 'assets/img/calendrier.png')}}" width="370" height="220" loading="lazy"
+                    alt="The Complete Camtasia Course for Content Creators" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">3 semaines</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Informatique</span>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Cours de soutien en informatique complet</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(7/7 jrs)</p>
+
+                  </div>
+
+                  <data class="price" value="35">30$</data>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3 semaines</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3 vacations</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="" class="btn has-before">
+            <span class="span">Voir les autres offres</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+
+
+<!-- Cours en ligne fin section -->
+
+     <!-- vidéo de cours debut section -->
+
+      <section class="video has-bg-image" aria-label="video"
+        style="background-image: url('./assets/images/video-bg.png')">
+        <div class="container">
+
+          <div class="video-card">
+
+            <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
+              <img src="{{url_for('static', filename = 'assets/img/calendrier.png')}}" width="970" height="550" loading="lazy" alt="video banner"
+                class="img-cover">
+
+              <button class="play-btn" aria-label="play video">
+                <ion-icon name="play" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+<!-- vidéo de cours fin section -->
+
+
+
+      <!-- evolution debut section -->
+
+      <section class="section stats" aria-label="stats">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="stats-card" style="--color: 170, 75%, 41%">
+                <h3 class="card-title">1982</h3>
+
+                <p class="card-text">Eleves inscrits</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 351, 83%, 61%">
+                <h3 class="card-title">568</h3>
+
+                <p class="card-text">Parents clients</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 260, 100%, 67%">
+                <h3 class="card-title">100%</h3>
+
+                <p class="card-text">Satisfaction</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 42, 94%, 55%">
+                <h3 class="card-title">10</h3>
+
+                <p class="card-text">Ecoles partenaires</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <!-- status fin section -->
+
+      <!-- forum debut section -->
+
+      <section class="section blog has-bg-image" id="blog" aria-label="blog"
+        style="background-image: url('./assets/images/blog-bg.svg')">
+        <div class="container">
+
+          <p class="section-subtitle">Les articles les plus vus</p>
+
+          <h2 class="h2 section-title">Soyez les mieux informés avec Kela-Tech</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="{{url_for('static', filename = 'assets/img/calendrier.png')}}" width="370" height="370" loading="lazy"
+                    alt="Hors ligne" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="#" class="card-subtitle">Hors ligne</a>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Comment utiliser Kela-Tech hors connexion</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">01 jan 2022</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">Commentaires 09</span>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">Kela-Tech est une application qui s'utilise avec et sans connexion internet...</p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="{{url_for('static', filename = 'assets/img/calendrier.png')}}" width="370" height="370" loading="lazy"
+                    alt="Urgence" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="#" class="card-subtitle">Urgence</a>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Mon application Kela-Tech ne fonctionne plus que faire?</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">10 fev 2022</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">Commentaire 100</span>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">Pas de panique cher parent! Kela-Tech dispose d'un service de maintenance</p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="assets/img/calendrier.png" width="370" height="370" loading="lazy"
+                    alt="Question" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="#" class="card-subtitle">Question!</a>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Peut-on inscrire ses enfants directement via l'application kelaTech?</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">20 avr 2022</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">Com 00</span>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">OUI! Chers parent, Kela-Tech vous offre la possibilité d'inscrire vos charmants enfants directement via ses differentes platformes dans nos ecoles partenaires.</p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- forum fin section -->
+
+
+   <!-- footer debut section -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="assets/img/logo.png" width="120" height="30" alt="kelaTech logo">
+          </a>
+
+          <p class="footer-brand-text"> Kela-Tech est un projet du collectif Pro-Tech</p>
+
+          <div class="wrapper">
+            <span class="span">Adresse:</span>
+
+            <address class="address">166 AV, Lokolenge, C/Ngiri-ngiri</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Téléphone:</span>
+
+            <a href="tel:+011234567890" class="footer-link">+243 815 829 230</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:kelatech243@gmail.com" class="footer-link">kelatech243@gmail.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Platforme<br/> Kela-Tech</p>
+          </li>
+
+          <li>
+            <a href="#About" class="footer-link">A propos</a>
+          </li>
+
+          <li>
+            <a href="#Courses" class="footer-link">Cours</a>
+          </li>
+
+          <li>
+            <a href="mailto:eugenesitaa@gmail.com" class="footer-link">Eugène Sita</a>
+          </li>
+
+          <li>
+            <a href="mailto:sarahchikuru@gmail.com" class="footer-link">Sarah Chikuru</a>
+          </li>
+
+          
+
+        </ul>
+
+        
+        <div class="footer-list">
+
+          <p class="footer-list-title">Nous contacter</p>
+
+          <p class="footer-list-text">Ecrivez votre adresse mail afin de vous tenir informés des nouvelles mises à jours</p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Email" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">S'inscrire</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100088351038478" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/p/CmeA2iEMoIa/?igshid=MDJmNzVkMjY=" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">&copy; <a href="#">Kela-Tech</a>. All Rights Reserved. Designed by <a class="auteur" href="mailto:sarahchikuru@gmail.com">Sarah Chikuru</a></p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{{url_for('static', filename = 'assets/js/index.js')}}" defer></script>
+
+  <!-- liens ionicon-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
