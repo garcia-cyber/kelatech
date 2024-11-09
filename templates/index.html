@@ -691,7 +691,7 @@
               <div class="blog-card">
 
                 <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="assets/img/calendrier.png" width="370" height="370" loading="lazy"
+                  <img src="{{url_for('static' , filename = 'assets/img/calendrier.png')}}" width="370" height="370" loading="lazy"
                     alt="Question" class="img-cover">
                 </figure>
 
@@ -756,7 +756,7 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="assets/img/logo.png" width="120" height="30" alt="kelaTech logo">
+            <img src="{{url_for('static',filename = 'assets/img/logo.png')}}" width="120" height="30" alt="kelaTech logo">
           </a>
 
           <p class="footer-brand-text"> Kela-Tech est un projet du collectif Pro-Tech</p>
